@@ -2,6 +2,20 @@
 
 <img width="1018" height="632" alt="Screenshot from 2025-08-22 02-04-45" src="https://github.com/user-attachments/assets/53473e78-9651-49ce-91b0-ae6205ca57bf" />
 
+## Introduction
+
+This repository contains the source code, models, and configurations for a custom omni-directional mobile robot.
+
+The project includes:
+
+* **Robot Models**: The URDF and mesh files (`.stl`) for the robot's visual and collision properties, suitable for simulation.
+* **ROS Packages**: Packages for the robot's control (`omni_wheel_drive_controller`), hardware interface, and sensor integration.
+* **Simulation Environments**: Files for simulating the robot in a Gazebo environment, useful for testing navigation, control, and sensor data.
+
+### Acknowledgements
+
+The map files used in this repository are sourced from a pre-existing project: `ros2_omni_robot_sim` by `YePeOn7`.
+
 ### Tested on
 
 - Ubuntu 24.04
@@ -58,11 +72,11 @@ Open another terminal then run teleop command.
 
 ### 3. Navigation
 
-<pre lang="markdown"> ros2 launch khemin_omni gazebo.launch.py </pre>
+<pre lang="markdown"> ros2 launch khemin_omni navigation.launch.py  </pre>
 
 ![Screencast from 2025-08-23 17-17-31 (online-video-cutter com)](https://github.com/user-attachments/assets/62e4a1c7-73e2-4406-86fa-cfd546db16e1)
 
-
+The Nav2 Goal tool in RViz lets you send a navigation target to your robot. Simply click on the map for the desired position, drag the mouse to set the orientation, and the robot will begin moving to the selected goal.
 
 
 
