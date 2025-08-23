@@ -1,6 +1,6 @@
 # Khemin Omni Robot Gazebo Simulation
 
-<img width="1018" height="632" alt="Screenshot from 2025-08-22 02-04-45" src="https://github.com/user-attachments/assets/53473e78-9651-49ce-91b0-ae6205ca57bf" />
+<img width="1018" height="632" alt="Screenshot from 2025-08-22 02-04-45-Photoroom" src="https://github.com/user-attachments/assets/353fae6d-f4e3-403b-a09c-e4dad657b0de" />
 
 ## Introduction
 
