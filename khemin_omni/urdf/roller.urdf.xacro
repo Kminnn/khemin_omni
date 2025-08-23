@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:macro name="roller" params="suffix parent xyz rpy">
+    <link name="roller_link_${suffix}">
+      <visual>
+        <geometry>
+          <box size="0.001 0.001 0.001"/> <!-- Tiny invisible box -->
+        </geometry>
+        <material name="invisible">
+          <color rgba="0 0 0 0"/>  <!-- Fully transparent -->
+        </material>
+      </visual>
+      <collision>
+        <geometry>
+          <cylinder radius="0.01" length="0.01"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="0.009" />
+        <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" />
+      </inertial>
+    </link>
+
+    <joint name="roller_joint_${suffix}" type="continuous">
+      <parent link="${parent}" />
+      <child link="roller_link_${suffix}" />
+      <origin xyz="${xyz}" rpy="${rpy}" />
+      <axis xyz="0 0 1" />
+    </joint>
+  </xacro:macro>
+</robot>

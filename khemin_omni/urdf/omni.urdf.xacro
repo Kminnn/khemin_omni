@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:include filename="$(find khemin_omni)/urdf/roller.urdf.xacro"/>
+  
+  <xacro:macro name="omni_wheel" params="suffix parent xyz rpy">
+    <link name="omni_wheel_link_${suffix}">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://khemin_omni/mesh/omni.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+        <material name="grey">
+          <color rgba="0.5 0.5 0.5 1" />
+        </material>
+      </visual>
+      <!-- <collision>
+        <geometry>
+          <mesh filename="package://khemin_omni/mesh/omni.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </collision> -->
+      <inertial>
+        <mass value="0.5" />
+        <inertia ixx="0.005" ixy="0" ixz="0" iyy="0.005" iyz="0" izz="0.005" />
+      </inertial>
+    </link>
+
+    <!-- <joint name="omni_wheel_joint_${suffix}" type="fixed"> -->
+    <joint name="omni_wheel_joint_${suffix}" type="continuous">
+      <parent link="${parent}" />
+      <child link="omni_wheel_link_${suffix}" />
+      <origin xyz="${xyz}" rpy="${rpy}" />
+      <axis xyz="0 0 -1"/>
+    </joint>
+
+    <xacro:roller parent="omni_wheel_link_${suffix}" suffix="${suffix}1"  xyz="0.07 0 0.00175" rpy="-1.5708 0 3.1416"/>
+    <xacro:roller parent="omni_wheel_link_${suffix}" suffix="${suffix}2"  xyz="0.0647 0.0268 0.00175" rpy="-1.5708 0 3.5343"/>
+    <xacro:roller parent="omni_wheel_link_${suffix}" suffix="${suffix}3"  xyz="0.0495 0.0495 0.00175" rpy="-1.5708 0 3.9269"/>
+    <xacro:roller parent="omni_wheel_link_${suffix}" suffix="${suffix}4"  xyz="0.0268 0.0647 0.00175" rpy="-1.5708 0 4.3197"/>
+    <xacro:roller parent="omni_wheel_link_${suffix}" suffix="${suffix}5"  xyz="0 0.07 0.00175" rpy="-1.5708 0 4.7124"/>
+    <xacro:roller parent="omni_wheel_link_${suffix}" suffix="${suffix}6"  xyz="-0.0268 0.0647 0.00175" rpy="-1.5708 0 5.1051"/>
+    <xacro:roller parent="omni_wheel_link_${suffix}" suffix="${suffix}7"  xyz="-0.0495 0.0495 0.00175" rpy="-1.5708 0 5.4978"/>
+    <xacro:roller parent="omni_wheel_link_${suffix}" suffix="${suffix}8"  xyz="-0.0647 0.0268 0.00175" rpy="-1.5708 0 5.8905"/>
+    <xacro:roller parent="omni_wheel_link_${suffix}" suffix="${suffix}9"  xyz="-0.07 0 0.00175" rpy="-1.5708 0 0.0"/>
+    <xacro:roller parent="omni_wheel_link_${suffix}" suffix="${suffix}10" xyz="-0.0647 -0.0268 0.00175" rpy="-1.5708 0 0.3927"/>
+    <xacro:roller parent="omni_wheel_link_${suffix}" suffix="${suffix}11" xyz="-0.0495 -0.0495 0.00175" rpy="-1.5708 0 0.7854"/>
+    <xacro:roller parent="omni_wheel_link_${suffix}" suffix="${suffix}12" xyz="-0.0268 -0.0647 0.00175" rpy="-1.5708 0 1.1781"/>
+    <xacro:roller parent="omni_wheel_link_${suffix}" suffix="${suffix}13" xyz="0 -0.07 0.00175" rpy="-1.5708 0 1.5708"/>
+    <xacro:roller parent="omni_wheel_link_${suffix}" suffix="${suffix}14" xyz="0.0268 -0.0647 0.00175" rpy="-1.5708 0 1.9635"/>
+    <xacro:roller parent="omni_wheel_link_${suffix}" suffix="${suffix}15" xyz="0.0495 -0.0495 0.00175" rpy="-1.5708 0 2.3562"/>
+    <xacro:roller parent="omni_wheel_link_${suffix}" suffix="${suffix}16" xyz="0.0647 -0.0268 0.00175" rpy="-1.5708 0 2.7489"/>
+
+
+  </xacro:macro>
+</robot>
