@@ -39,6 +39,8 @@ def generate_launch_description():
     #xacro_file = os.path.join(pkg_path,'urdf', robot_model, 'main.urdf.xacro')
     xacro_file = os.path.join(pkg_path, 'urdf', 'main.urdf.xacro')
     rviz_config_file = os.path.join(pkg_path, 'rviz', 'rviz_config.rviz')
+    ekf_config_path = os.path.join(pkg_path, 'config', 'ekf.yaml')
+
 
 
     robot_description_config = Command(['xacro ', xacro_file])
@@ -125,7 +127,7 @@ def generate_launch_description():
         package='controller_manager',
         executable='spawner',
         arguments=['omni_wheel_drive_controller'],
-        remappings=[('/omni_wheel_drive_controller/odom', '/odom')],
+        # remappings=[('/omni_wheel_drive_controller/odom', '/odom')],
         )
 
     joint_state_broadcaster = Node(
@@ -157,6 +159,14 @@ def generate_launch_description():
         name='odom_relay',
         arguments=['/omni_wheel_drive_controller/odom', '/odom'],
         output='screen'
+    )
+
+    ekf_node = Node(
+        package='robot_localization',
+        executable='ekf_node',
+        name='ekf_filter_node',
+        output='screen',
+        parameters=[ekf_config_path]
     )
 
     # Create launch description and add actions

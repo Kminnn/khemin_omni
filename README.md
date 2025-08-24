@@ -39,6 +39,7 @@ sudo apt install -y ros-jazzy-ros-gz \
   ros-jazzy-nav2-bringup \
   ros-jazzy-controller-manager \
   ros-jazzy-twist-mux \
+  ros-jazzy-robot-localization \
   ros-jazzy-slam-toolbox </pre>
 
 Don't forget to build and source the package. 

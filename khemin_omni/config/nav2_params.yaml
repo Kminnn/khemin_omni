@@ -21,6 +21,7 @@ amcl:
     max_particles: 2000
     min_particles: 500
     odom_frame_id: "odom"
+    odom_topic: "/odometry/filtered"
     pf_err: 0.05
     pf_z: 0.99
     recovery_alpha_fast: 0.0
@@ -97,6 +98,7 @@ docking_server:
 
 controller_server:
   ros__parameters:
+    odom_topic: "/odometry/filtered"
     controller_frequency: 10.0
     min_x_velocity_threshold: 0.001
     min_y_velocity_threshold: 0.001
@@ -188,7 +190,7 @@ controller_server:
       short_circuit_trajectory_evaluation: true
       stateful: true
       critics: ["RotateToGoal", "Oscillation", "BaseObstacle", "GoalAlign", "PathAlign", "PathDist", "GoalDist"]
-      BaseObstacle.scale: 0.02
+      BaseObstacle.scale: 0.05
       PathAlign.scale: 32.0
       PathAlign.forward_point_distance: 0.1
       GoalAlign.scale: 24.0
@@ -206,6 +208,7 @@ local_costmap:
       update_frequency: 5.0
       publish_frequency: 2.0
       global_frame: odom
+      odom_topic: "/odometry/filtered"
       robot_base_frame: base_footprint
       rolling_window: true
       width: 2
@@ -216,7 +219,7 @@ local_costmap:
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
         inflation_radius: 0.5
-        cost_scaling_factor: 2.0
+        cost_scaling_factor: 5.0
       obstacle_layer:
         plugin: "nav2_costmap_2d::ObstacleLayer"
         enabled: true
@@ -512,7 +515,7 @@ velocity_smoother:
     # max_decel: [-2.5, 0.0, -3.2]
     max_accel: [2.5, 2.5, 3.2]
     max_decel: [-2.5, -2.5, -3.2]
-    odom_topic: "odom"
+    odom_topic: "/odometry/filtered"
     odom_duration: 0.1
     use_realtime_priority: false
     enable_stamped_cmd_vel: false
