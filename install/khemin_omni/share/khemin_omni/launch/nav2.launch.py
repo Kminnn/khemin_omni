@@ -1,1 +1,0 @@
-/home/khemin/khemin_omni/khemin_omni/launch/nav2.launch.py

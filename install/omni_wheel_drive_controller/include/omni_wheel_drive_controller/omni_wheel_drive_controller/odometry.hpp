@@ -1,1 +1,0 @@
-/home/khemin/khemin_omni/omni_wheel_drive_controller/include/omni_wheel_drive_controller/odometry.hpp

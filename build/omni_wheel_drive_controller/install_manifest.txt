@@ -1,3 +1,0 @@
-/home/khemin/khemin_omni/install/omni_wheel_drive_controller/lib/libomni_wheel_drive_controller.so
-/home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/cmake/export_omni_wheel_drive_controllerExport.cmake
-/home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/cmake/export_omni_wheel_drive_controllerExport-noconfig.cmake

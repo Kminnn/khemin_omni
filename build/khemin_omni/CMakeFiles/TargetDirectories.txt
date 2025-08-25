@@ -1,9 +1,0 @@
-/home/khemin/khemin_omni/build/khemin_omni/CMakeFiles/uninstall.dir
-/home/khemin/khemin_omni/build/khemin_omni/CMakeFiles/khemin_omni_uninstall.dir
-/home/khemin/khemin_omni/build/khemin_omni/CMakeFiles/test.dir
-/home/khemin/khemin_omni/build/khemin_omni/CMakeFiles/edit_cache.dir
-/home/khemin/khemin_omni/build/khemin_omni/CMakeFiles/rebuild_cache.dir
-/home/khemin/khemin_omni/build/khemin_omni/CMakeFiles/list_install_components.dir
-/home/khemin/khemin_omni/build/khemin_omni/CMakeFiles/install.dir
-/home/khemin/khemin_omni/build/khemin_omni/CMakeFiles/install/local.dir
-/home/khemin/khemin_omni/build/khemin_omni/CMakeFiles/install/strip.dir
