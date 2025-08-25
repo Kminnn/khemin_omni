@@ -1,0 +1,4 @@
+source;share/khemin_omni/local_setup.bash
+source;share/khemin_omni/local_setup.dsv
+source;share/khemin_omni/local_setup.sh
+source;share/khemin_omni/local_setup.zsh

@@ -1,0 +1,514 @@
+[0.000000] (-) TimerEvent: {}
+[0.001500] (khemin_omni) JobQueued: {'identifier': 'khemin_omni', 'dependencies': OrderedDict()}
+[0.001586] (omni_wheel_drive_controller) JobQueued: {'identifier': 'omni_wheel_drive_controller', 'dependencies': OrderedDict()}
+[0.001629] (khemin_omni) JobStarted: {'identifier': 'khemin_omni'}
+[0.015094] (omni_wheel_drive_controller) JobStarted: {'identifier': 'omni_wheel_drive_controller'}
+[0.025520] (khemin_omni) JobProgress: {'identifier': 'khemin_omni', 'progress': 'cmake'}
+[0.026814] (khemin_omni) Command: {'cmd': ['/usr/bin/cmake', '/home/khemin/khemin_omni/khemin_omni', '-DCMAKE_INSTALL_PREFIX=/home/khemin/khemin_omni/install/khemin_omni'], 'cwd': '/home/khemin/khemin_omni/build/khemin_omni', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'XDG_ACTIVATION_TOKEN': 'gnome-shell/Terminator/2969-2-khemin_TIME876895', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'khemin', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_launch_vendor/share/gz:/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/khemin/khemin_omni/install/omni_wheel_drive_controller/lib:/opt/ros/jazzy/opt/gz_launch_vendor/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/khemin', 'OLDPWD': '/home/khemin', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2587', 'SYSTEMD_EXEC_PID': '2969', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '6554', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/khemin/khemin_omni/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'khemin', 'JOURNAL_STREAM': '9:21977', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'khemin', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/khemin:@/tmp/.ICE-unix/2937,unix/khemin:/tmp/.ICE-unix/2937', 'INVOCATION_ID': 'e1aaebbd7c944396aeaf09afd4e35e1c', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/khemin/khemin_omni/install/omni_wheel_drive_controller:/home/khemin/khemin_omni/install/khemin_omni:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:8ec279b5-6e50-4ba4-9c53-46f32dafdfb6', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/opt/ros/jazzy/share', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/khemin/khemin_omni/build/khemin_omni', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/khemin/khemin_omni/install/omni_wheel_drive_controller:/home/khemin/khemin_omni/install/khemin_omni:/opt/ros/jazzy/opt/gz_launch_vendor:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.033391] (omni_wheel_drive_controller) JobProgress: {'identifier': 'omni_wheel_drive_controller', 'progress': 'cmake'}
+[0.034406] (omni_wheel_drive_controller) Command: {'cmd': ['/usr/bin/cmake', '/home/khemin/khemin_omni/omni_wheel_drive_controller', '-DCMAKE_INSTALL_PREFIX=/home/khemin/khemin_omni/install/omni_wheel_drive_controller'], 'cwd': '/home/khemin/khemin_omni/build/omni_wheel_drive_controller', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'XDG_ACTIVATION_TOKEN': 'gnome-shell/Terminator/2969-2-khemin_TIME876895', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'khemin', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_launch_vendor/share/gz:/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/khemin/khemin_omni/install/omni_wheel_drive_controller/lib:/opt/ros/jazzy/opt/gz_launch_vendor/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/khemin', 'OLDPWD': '/home/khemin', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2587', 'SYSTEMD_EXEC_PID': '2969', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '6554', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/khemin/khemin_omni/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'khemin', 'JOURNAL_STREAM': '9:21977', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'khemin', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/khemin:@/tmp/.ICE-unix/2937,unix/khemin:/tmp/.ICE-unix/2937', 'INVOCATION_ID': 'e1aaebbd7c944396aeaf09afd4e35e1c', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/khemin/khemin_omni/install/omni_wheel_drive_controller:/home/khemin/khemin_omni/install/khemin_omni:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:8ec279b5-6e50-4ba4-9c53-46f32dafdfb6', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/opt/ros/jazzy/share', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/khemin/khemin_omni/build/omni_wheel_drive_controller', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/khemin/khemin_omni/install/omni_wheel_drive_controller:/home/khemin/khemin_omni/install/khemin_omni:/opt/ros/jazzy/opt/gz_launch_vendor:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099537] (-) TimerEvent: {}
+[0.150118] (khemin_omni) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.165987] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.199639] (-) TimerEvent: {}
+[0.280772] (khemin_omni) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.290580] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.299717] (-) TimerEvent: {}
+[0.315588] (khemin_omni) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.324738] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.399830] (-) TimerEvent: {}
+[0.481644] (khemin_omni) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.497581] (khemin_omni) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.498232] (khemin_omni) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.499231] (khemin_omni) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.499971] (-) TimerEvent: {}
+[0.510179] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.519051] (khemin_omni) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.532245] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.532910] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.533831] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.555431] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.600104] (-) TimerEvent: {}
+[0.700457] (-) TimerEvent: {}
+[0.746943] (khemin_omni) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.769824] (khemin_omni) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.770523] (khemin_omni) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.771617] (khemin_omni) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.784421] (khemin_omni) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.784956] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.800536] (-) TimerEvent: {}
+[0.807829] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.808521] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.809586] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.821817] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Found ros2_control_cmake: 0.2.1 (/opt/ros/jazzy/share/ros2_control_cmake/cmake)\n'}
+[0.822268] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Compiler warnings enabled for GNU\n'}
+[0.822447] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Detected GCC Version: 13.3.0 (Major: 13, Minor: 3)\n'}
+[0.833678] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.900659] (-) TimerEvent: {}
+[1.001022] (-) TimerEvent: {}
+[1.101348] (-) TimerEvent: {}
+[1.165780] (khemin_omni) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[1.201495] (-) TimerEvent: {}
+[1.216767] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[1.301645] (-) TimerEvent: {}
+[1.402116] (-) TimerEvent: {}
+[1.492630] (khemin_omni) StdoutLine: {'line': b'-- Found rclcpp: 28.1.10 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[1.502244] (-) TimerEvent: {}
+[1.547768] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Found controller_interface: 4.35.0 (/opt/ros/jazzy/share/controller_interface/cmake)\n'}
+[1.602402] (-) TimerEvent: {}
+[1.652950] (khemin_omni) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[1.702539] (-) TimerEvent: {}
+[1.704955] (khemin_omni) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[1.745809] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[1.762816] (khemin_omni) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.798073] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[1.802673] (-) TimerEvent: {}
+[1.825312] (khemin_omni) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.856284] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.902834] (-) TimerEvent: {}
+[1.920358] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.002993] (-) TimerEvent: {}
+[2.081355] (khemin_omni) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[2.094441] (khemin_omni) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.103120] (-) TimerEvent: {}
+[2.203482] (-) TimerEvent: {}
+[2.303916] (-) TimerEvent: {}
+[2.333402] (khemin_omni) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[2.386780] (khemin_omni) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[2.404054] (-) TimerEvent: {}
+[2.445958] (khemin_omni) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.504209] (-) TimerEvent: {}
+[2.594514] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2\n'}
+[2.604343] (-) TimerEvent: {}
+[2.681271] (khemin_omni) StdoutLine: {'line': b'-- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[2.704474] (-) TimerEvent: {}
+[2.726081] (khemin_omni) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[2.755149] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[2.768912] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.775016] (khemin_omni) StdoutLine: {'line': b'-- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)\n'}
+[2.804605] (-) TimerEvent: {}
+[2.854288] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2\n'}
+[2.855555] (khemin_omni) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[2.904775] (-) TimerEvent: {}
+[2.929994] (khemin_omni) StdoutLine: {'line': b'-- Found tf2: 0.36.12 (/opt/ros/jazzy/share/tf2/cmake)\n'}
+[2.949570] (khemin_omni) StdoutLine: {'line': b'-- Found tf2_ros: 0.36.12 (/opt/ros/jazzy/share/tf2_ros/cmake)\n'}
+[3.004931] (-) TimerEvent: {}
+[3.009573] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[3.017410] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2\n'}
+[3.062305] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[3.070311] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2\n'}
+[3.092426] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2\n'}
+[3.105068] (-) TimerEvent: {}
+[3.121311] (omni_wheel_drive_controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.205235] (-) TimerEvent: {}
+[3.305637] (-) TimerEvent: {}
+[3.353988] (khemin_omni) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.36.12 (/opt/ros/jazzy/share/tf2_geometry_msgs/cmake)\n'}
+[3.405775] (-) TimerEvent: {}
+[3.419955] (khemin_omni) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)\n'}
+[3.423328] (khemin_omni) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[3.423688] (khemin_omni) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[3.438412] (khemin_omni) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[3.505979] (-) TimerEvent: {}
+[3.606368] (-) TimerEvent: {}
+[3.706761] (-) TimerEvent: {}
+[3.728332] (khemin_omni) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[3.728683] (khemin_omni) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[3.731510] (khemin_omni) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.733923] (khemin_omni) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[3.741422] (khemin_omni) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.746069] (khemin_omni) StdoutLine: {'line': b'-- Configuring done (3.7s)\n'}
+[3.760158] (khemin_omni) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[3.766118] (khemin_omni) StdoutLine: {'line': b'-- Build files have been written to: /home/khemin/khemin_omni/build/khemin_omni\n'}
+[3.787227] (khemin_omni) CommandEnded: {'returncode': 0}
+[3.789952] (khemin_omni) JobProgress: {'identifier': 'khemin_omni', 'progress': 'build'}
+[3.790037] (khemin_omni) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/khemin/khemin_omni/build/khemin_omni', '--', '-j16', '-l16'], 'cwd': '/home/khemin/khemin_omni/build/khemin_omni', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'XDG_ACTIVATION_TOKEN': 'gnome-shell/Terminator/2969-2-khemin_TIME876895', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'khemin', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_launch_vendor/share/gz:/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/khemin/khemin_omni/install/omni_wheel_drive_controller/lib:/opt/ros/jazzy/opt/gz_launch_vendor/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/khemin', 'OLDPWD': '/home/khemin', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2587', 'SYSTEMD_EXEC_PID': '2969', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '6554', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/khemin/khemin_omni/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'khemin', 'JOURNAL_STREAM': '9:21977', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'khemin', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/khemin:@/tmp/.ICE-unix/2937,unix/khemin:/tmp/.ICE-unix/2937', 'INVOCATION_ID': 'e1aaebbd7c944396aeaf09afd4e35e1c', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/khemin/khemin_omni/install/omni_wheel_drive_controller:/home/khemin/khemin_omni/install/khemin_omni:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:8ec279b5-6e50-4ba4-9c53-46f32dafdfb6', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/opt/ros/jazzy/share', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/khemin/khemin_omni/build/khemin_omni', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/khemin/khemin_omni/install/omni_wheel_drive_controller:/home/khemin/khemin_omni/install/khemin_omni:/opt/ros/jazzy/opt/gz_launch_vendor:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[3.791310] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Found generate_parameter_library: 0.5.0 (/opt/ros/jazzy/share/generate_parameter_library/cmake)\n'}
+[3.797317] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Found parameter_traits: 0.5.0 (/opt/ros/jazzy/share/parameter_traits/cmake)\n'}
+[3.806857] (-) TimerEvent: {}
+[3.843953] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)\n'}
+[3.891416] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Found tf2: 0.36.12 (/opt/ros/jazzy/share/tf2/cmake)\n'}
+[3.902703] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Found tf2_msgs: 0.36.12 (/opt/ros/jazzy/share/tf2_msgs/cmake)\n'}
+[3.903765] (khemin_omni) CommandEnded: {'returncode': 0}
+[3.904837] (khemin_omni) JobProgress: {'identifier': 'khemin_omni', 'progress': 'install'}
+[3.906886] (-) TimerEvent: {}
+[3.929753] (khemin_omni) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/khemin/khemin_omni/build/khemin_omni'], 'cwd': '/home/khemin/khemin_omni/build/khemin_omni', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'XDG_ACTIVATION_TOKEN': 'gnome-shell/Terminator/2969-2-khemin_TIME876895', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'khemin', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_launch_vendor/share/gz:/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/khemin/khemin_omni/install/omni_wheel_drive_controller/lib:/opt/ros/jazzy/opt/gz_launch_vendor/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/khemin', 'OLDPWD': '/home/khemin', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2587', 'SYSTEMD_EXEC_PID': '2969', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '6554', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/khemin/khemin_omni/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'khemin', 'JOURNAL_STREAM': '9:21977', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'khemin', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/khemin:@/tmp/.ICE-unix/2937,unix/khemin:/tmp/.ICE-unix/2937', 'INVOCATION_ID': 'e1aaebbd7c944396aeaf09afd4e35e1c', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/khemin/khemin_omni/install/omni_wheel_drive_controller:/home/khemin/khemin_omni/install/khemin_omni:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:8ec279b5-6e50-4ba4-9c53-46f32dafdfb6', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/opt/ros/jazzy/share', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/khemin/khemin_omni/build/khemin_omni', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/khemin/khemin_omni/install/omni_wheel_drive_controller:/home/khemin/khemin_omni/install/khemin_omni:/opt/ros/jazzy/opt/gz_launch_vendor:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[3.950506] (khemin_omni) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.950818] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/urdf\n'}
+[3.951092] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/urdf/main.urdf.xacro\n'}
+[3.951495] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/urdf/lidar.urdf.xacro\n'}
+[3.951800] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/urdf/ros2_control.urdf.xacro\n'}
+[3.952046] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/urdf/imu.urdf.xacro\n'}
+[3.952383] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/urdf/roller.urdf.xacro\n'}
+[3.952678] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/urdf/omni.urdf.xacro\n'}
+[3.952932] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/urdf/base_link.urdf.xacro\n'}
+[3.953247] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/urdf/gazebo_plugins.urdf.xacro\n'}
+[3.953544] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/mesh\n'}
+[3.953772] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/mesh/BB.stl\n'}
+[3.955307] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Found ament_cmake_gmock: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_gmock/cmake)\n'}
+[3.961980] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Found controller_manager: 4.35.0 (/opt/ros/jazzy/share/controller_manager/cmake)\n'}
+[3.971812] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/mesh/omni.stl\n'}
+[3.988755] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/mesh/BBB.stl\n'}
+[4.006900] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/launch\n'}
+[4.007204] (-) TimerEvent: {}
+[4.007428] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/launch/navigation.launch.py\n'}
+[4.007638] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/launch/slam.launch.py\n'}
+[4.007905] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/launch/display.launch.py\n'}
+[4.008278] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/launch/nav2.launch.py\n'}
+[4.008653] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/launch/gazebo.launch.py\n'}
+[4.009038] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/rviz\n'}
+[4.009438] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/rviz/rviz_config.rviz\n'}
+[4.009700] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/rviz/navigation.rviz\n'}
+[4.009947] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/rviz/slam.rviz\n'}
+[4.010212] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/config\n'}
+[4.010453] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/config/ekf.yaml\n'}
+[4.010751] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/config/gz_bridge\n'}
+[4.010986] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/config/gz_bridge/gz_bridge.yaml\n'}
+[4.011302] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/config/sim_controller.yaml\n'}
+[4.011675] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/config/nav2_params.yaml\n'}
+[4.012055] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/config/twist_mux\n'}
+[4.012280] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/config/twist_mux/twist_mux.yaml\n'}
+[4.012515] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/map\n'}
+[4.012742] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/map/maze1.pgm\n'}
+[4.013251] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/map/maze1.yaml\n'}
+[4.013534] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/map/maze2.yaml\n'}
+[4.013811] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/map/map1.yaml\n'}
+[4.014104] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/map/maze2.pgm\n'}
+[4.014504] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/map/map1.pgm\n'}
+[4.014890] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/worlds\n'}
+[4.015162] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/worlds/maze2.sdf\n'}
+[4.015400] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/worlds/maze1.sdf\n'}
+[4.016079] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/ament_index/resource_index/package_run_dependencies/khemin_omni\n'}
+[4.016562] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/ament_index/resource_index/parent_prefix_path/khemin_omni\n'}
+[4.017052] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/environment/ament_prefix_path.sh\n'}
+[4.017405] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/environment/ament_prefix_path.dsv\n'}
+[4.017754] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/environment/path.sh\n'}
+[4.018121] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/environment/path.dsv\n'}
+[4.018464] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/local_setup.bash\n'}
+[4.018809] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/local_setup.sh\n'}
+[4.019172] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/local_setup.zsh\n'}
+[4.019518] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/local_setup.dsv\n'}
+[4.019852] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/package.dsv\n'}
+[4.020413] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/ament_index/resource_index/packages/khemin_omni\n'}
+[4.020881] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/cmake/khemin_omniConfig.cmake\n'}
+[4.021204] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/cmake/khemin_omniConfig-version.cmake\n'}
+[4.021566] (khemin_omni) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/khemin_omni/share/khemin_omni/package.xml\n'}
+[4.025834] (khemin_omni) CommandEnded: {'returncode': 0}
+[4.056232] (khemin_omni) JobEnded: {'identifier': 'khemin_omni', 'rc': 0}
+[4.094781] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Found ros2_control_test_assets: 4.35.0 (/opt/ros/jazzy/share/ros2_control_test_assets/cmake)\n'}
+[4.101659] (omni_wheel_drive_controller) StdoutLine: {'line': b"-- Found gmock sources under '/opt/ros/jazzy/src/gmock_vendor': C++ tests using 'Google Mock' will be built\n"}
+[4.107339] (-) TimerEvent: {}
+[4.116371] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_gtest/cmake)\n'}
+[4.117621] (omni_wheel_drive_controller) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/jazzy/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[4.127163] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[4.207480] (-) TimerEvent: {}
+[4.307938] (-) TimerEvent: {}
+[4.343365] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Configuring done (4.3s)\n'}
+[4.408061] (-) TimerEvent: {}
+[4.495081] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[4.508174] (-) TimerEvent: {}
+[4.524827] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Build files have been written to: /home/khemin/khemin_omni/build/omni_wheel_drive_controller\n'}
+[4.553738] (omni_wheel_drive_controller) CommandEnded: {'returncode': 0}
+[4.554856] (omni_wheel_drive_controller) JobProgress: {'identifier': 'omni_wheel_drive_controller', 'progress': 'build'}
+[4.555693] (omni_wheel_drive_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/khemin/khemin_omni/build/omni_wheel_drive_controller', '--', '-j16', '-l16'], 'cwd': '/home/khemin/khemin_omni/build/omni_wheel_drive_controller', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'XDG_ACTIVATION_TOKEN': 'gnome-shell/Terminator/2969-2-khemin_TIME876895', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'khemin', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_launch_vendor/share/gz:/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/khemin/khemin_omni/install/omni_wheel_drive_controller/lib:/opt/ros/jazzy/opt/gz_launch_vendor/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/khemin', 'OLDPWD': '/home/khemin', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2587', 'SYSTEMD_EXEC_PID': '2969', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '6554', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/khemin/khemin_omni/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'khemin', 'JOURNAL_STREAM': '9:21977', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'khemin', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/khemin:@/tmp/.ICE-unix/2937,unix/khemin:/tmp/.ICE-unix/2937', 'INVOCATION_ID': 'e1aaebbd7c944396aeaf09afd4e35e1c', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/khemin/khemin_omni/install/omni_wheel_drive_controller:/home/khemin/khemin_omni/install/khemin_omni:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:8ec279b5-6e50-4ba4-9c53-46f32dafdfb6', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/opt/ros/jazzy/share', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/khemin/khemin_omni/build/omni_wheel_drive_controller', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/khemin/khemin_omni/install/omni_wheel_drive_controller:/home/khemin/khemin_omni/install/khemin_omni:/opt/ros/jazzy/opt/gz_launch_vendor:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[4.608273] (-) TimerEvent: {}
+[4.683173] (omni_wheel_drive_controller) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object gmock/CMakeFiles/gmock.dir/opt/ros/jazzy/src/gtest_vendor/src/gtest-all.cc.o\x1b[0m\n'}
+[4.690758] (omni_wheel_drive_controller) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o\x1b[0m\n'}
+[4.691898] (omni_wheel_drive_controller) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o\x1b[0m\n'}
+[4.694083] (omni_wheel_drive_controller) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mRunning `/opt/ros/jazzy/bin/generate_parameter_library_cpp /home/khemin/khemin_omni/build/omni_wheel_drive_controller/include/omni_wheel_drive_controller/omni_wheel_drive_controller_parameters.hpp /home/khemin/khemin_omni/omni_wheel_drive_controller/src/omni_wheel_drive_controller_parameters.yaml `\x1b[0m\n'}
+[4.708370] (-) TimerEvent: {}
+[4.808647] (-) TimerEvent: {}
+[4.909022] (-) TimerEvent: {}
+[5.009346] (-) TimerEvent: {}
+[5.109657] (-) TimerEvent: {}
+[5.209977] (-) TimerEvent: {}
+[5.310258] (-) TimerEvent: {}
+[5.410507] (-) TimerEvent: {}
+[5.510762] (-) TimerEvent: {}
+[5.611041] (-) TimerEvent: {}
+[5.711316] (-) TimerEvent: {}
+[5.811611] (-) TimerEvent: {}
+[5.911891] (-) TimerEvent: {}
+[6.012144] (-) TimerEvent: {}
+[6.112451] (-) TimerEvent: {}
+[6.212847] (-) TimerEvent: {}
+[6.313251] (-) TimerEvent: {}
+[6.413636] (-) TimerEvent: {}
+[6.461518] (omni_wheel_drive_controller) StdoutLine: {'line': b'[ 35%] \x1b[34m\x1b[1mCreating deprecated header file /home/khemin/khemin_omni/build/omni_wheel_drive_controller/include/omni_wheel_drive_controller_parameters.hpp\x1b[0m\n'}
+[6.508496] (omni_wheel_drive_controller) StdoutLine: {'line': b'[ 35%] Built target omni_wheel_drive_controller_parameters\n'}
+[6.513712] (-) TimerEvent: {}
+[6.559821] (omni_wheel_drive_controller) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/omni_wheel_drive_controller.dir/src/omni_wheel_drive_controller.cpp.o\x1b[0m\n'}
+[6.560742] (omni_wheel_drive_controller) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/omni_wheel_drive_controller.dir/src/odometry.cpp.o\x1b[0m\n'}
+[6.613822] (-) TimerEvent: {}
+[6.714115] (-) TimerEvent: {}
+[6.814393] (-) TimerEvent: {}
+[6.914682] (-) TimerEvent: {}
+[7.001801] (omni_wheel_drive_controller) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX static library libgmock_main.a\x1b[0m\n'}
+[7.014775] (-) TimerEvent: {}
+[7.075209] (omni_wheel_drive_controller) StdoutLine: {'line': b'[ 57%] Built target gmock_main\n'}
+[7.114948] (-) TimerEvent: {}
+[7.215315] (-) TimerEvent: {}
+[7.315618] (-) TimerEvent: {}
+[7.415904] (-) TimerEvent: {}
+[7.516211] (-) TimerEvent: {}
+[7.616482] (-) TimerEvent: {}
+[7.716756] (-) TimerEvent: {}
+[7.817049] (-) TimerEvent: {}
+[7.917320] (-) TimerEvent: {}
+[8.017597] (-) TimerEvent: {}
+[8.117893] (-) TimerEvent: {}
+[8.218168] (-) TimerEvent: {}
+[8.318439] (-) TimerEvent: {}
+[8.418709] (-) TimerEvent: {}
+[8.518998] (-) TimerEvent: {}
+[8.619270] (-) TimerEvent: {}
+[8.719539] (-) TimerEvent: {}
+[8.819796] (-) TimerEvent: {}
+[8.920095] (-) TimerEvent: {}
+[9.020378] (-) TimerEvent: {}
+[9.120667] (-) TimerEvent: {}
+[9.220915] (-) TimerEvent: {}
+[9.321193] (-) TimerEvent: {}
+[9.421450] (-) TimerEvent: {}
+[9.521725] (-) TimerEvent: {}
+[9.622007] (-) TimerEvent: {}
+[9.722279] (-) TimerEvent: {}
+[9.822535] (-) TimerEvent: {}
+[9.922797] (-) TimerEvent: {}
+[10.023250] (-) TimerEvent: {}
+[10.123619] (-) TimerEvent: {}
+[10.223930] (-) TimerEvent: {}
+[10.324221] (-) TimerEvent: {}
+[10.424501] (-) TimerEvent: {}
+[10.463290] (omni_wheel_drive_controller) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX static library libgmock.a\x1b[0m\n'}
+[10.524600] (-) TimerEvent: {}
+[10.535412] (omni_wheel_drive_controller) StdoutLine: {'line': b'[ 64%] Built target gmock\n'}
+[10.560313] (omni_wheel_drive_controller) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/test_load_omni_wheel_drive_controller.dir/test/test_load_omni_wheel_drive_controller.cpp.o\x1b[0m\n'}
+[10.624732] (-) TimerEvent: {}
+[10.725062] (-) TimerEvent: {}
+[10.825342] (-) TimerEvent: {}
+[10.925657] (-) TimerEvent: {}
+[11.025977] (-) TimerEvent: {}
+[11.126308] (-) TimerEvent: {}
+[11.226618] (-) TimerEvent: {}
+[11.326946] (-) TimerEvent: {}
+[11.427280] (-) TimerEvent: {}
+[11.527600] (-) TimerEvent: {}
+[11.627929] (-) TimerEvent: {}
+[11.728248] (-) TimerEvent: {}
+[11.828561] (-) TimerEvent: {}
+[11.928898] (-) TimerEvent: {}
+[12.029198] (-) TimerEvent: {}
+[12.129508] (-) TimerEvent: {}
+[12.229777] (-) TimerEvent: {}
+[12.330071] (-) TimerEvent: {}
+[12.430347] (-) TimerEvent: {}
+[12.530625] (-) TimerEvent: {}
+[12.630915] (-) TimerEvent: {}
+[12.731199] (-) TimerEvent: {}
+[12.831519] (-) TimerEvent: {}
+[12.931833] (-) TimerEvent: {}
+[13.032151] (-) TimerEvent: {}
+[13.132442] (-) TimerEvent: {}
+[13.232728] (-) TimerEvent: {}
+[13.333024] (-) TimerEvent: {}
+[13.433335] (-) TimerEvent: {}
+[13.533668] (-) TimerEvent: {}
+[13.633933] (-) TimerEvent: {}
+[13.734194] (-) TimerEvent: {}
+[13.834430] (-) TimerEvent: {}
+[13.934716] (-) TimerEvent: {}
+[14.035047] (-) TimerEvent: {}
+[14.135333] (-) TimerEvent: {}
+[14.235617] (-) TimerEvent: {}
+[14.335881] (-) TimerEvent: {}
+[14.436180] (-) TimerEvent: {}
+[14.536481] (-) TimerEvent: {}
+[14.636749] (-) TimerEvent: {}
+[14.737035] (-) TimerEvent: {}
+[14.837296] (-) TimerEvent: {}
+[14.937570] (-) TimerEvent: {}
+[15.037858] (-) TimerEvent: {}
+[15.138232] (-) TimerEvent: {}
+[15.238516] (-) TimerEvent: {}
+[15.338814] (-) TimerEvent: {}
+[15.439121] (-) TimerEvent: {}
+[15.539459] (-) TimerEvent: {}
+[15.552657] (omni_wheel_drive_controller) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX executable test_load_omni_wheel_drive_controller\x1b[0m\n'}
+[15.639570] (-) TimerEvent: {}
+[15.739870] (-) TimerEvent: {}
+[15.795207] (omni_wheel_drive_controller) StdoutLine: {'line': b'[ 78%] Built target test_load_omni_wheel_drive_controller\n'}
+[15.839955] (-) TimerEvent: {}
+[15.940277] (-) TimerEvent: {}
+[16.040620] (-) TimerEvent: {}
+[16.140938] (-) TimerEvent: {}
+[16.241253] (-) TimerEvent: {}
+[16.341580] (-) TimerEvent: {}
+[16.441916] (-) TimerEvent: {}
+[16.542258] (-) TimerEvent: {}
+[16.642563] (-) TimerEvent: {}
+[16.742886] (-) TimerEvent: {}
+[16.843195] (-) TimerEvent: {}
+[16.943506] (-) TimerEvent: {}
+[17.043818] (-) TimerEvent: {}
+[17.144151] (-) TimerEvent: {}
+[17.244464] (-) TimerEvent: {}
+[17.344771] (-) TimerEvent: {}
+[17.445473] (-) TimerEvent: {}
+[17.545765] (-) TimerEvent: {}
+[17.646093] (-) TimerEvent: {}
+[17.746412] (-) TimerEvent: {}
+[17.846721] (-) TimerEvent: {}
+[17.947049] (-) TimerEvent: {}
+[18.047389] (-) TimerEvent: {}
+[18.147671] (-) TimerEvent: {}
+[18.247945] (-) TimerEvent: {}
+[18.348557] (-) TimerEvent: {}
+[18.448868] (-) TimerEvent: {}
+[18.549102] (-) TimerEvent: {}
+[18.649416] (-) TimerEvent: {}
+[18.749718] (-) TimerEvent: {}
+[18.850028] (-) TimerEvent: {}
+[18.950307] (-) TimerEvent: {}
+[19.050610] (-) TimerEvent: {}
+[19.150937] (-) TimerEvent: {}
+[19.251272] (-) TimerEvent: {}
+[19.351596] (-) TimerEvent: {}
+[19.451906] (-) TimerEvent: {}
+[19.552212] (-) TimerEvent: {}
+[19.652987] (-) TimerEvent: {}
+[19.753311] (-) TimerEvent: {}
+[19.853628] (-) TimerEvent: {}
+[19.953940] (-) TimerEvent: {}
+[20.054240] (-) TimerEvent: {}
+[20.154529] (-) TimerEvent: {}
+[20.254881] (-) TimerEvent: {}
+[20.355182] (-) TimerEvent: {}
+[20.455484] (-) TimerEvent: {}
+[20.555784] (-) TimerEvent: {}
+[20.656118] (-) TimerEvent: {}
+[20.756445] (-) TimerEvent: {}
+[20.856748] (-) TimerEvent: {}
+[20.957080] (-) TimerEvent: {}
+[21.057393] (-) TimerEvent: {}
+[21.157705] (-) TimerEvent: {}
+[21.258014] (-) TimerEvent: {}
+[21.358335] (-) TimerEvent: {}
+[21.458658] (-) TimerEvent: {}
+[21.558954] (-) TimerEvent: {}
+[21.610294] (omni_wheel_drive_controller) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking CXX shared library libomni_wheel_drive_controller.so\x1b[0m\n'}
+[21.659114] (-) TimerEvent: {}
+[21.759452] (-) TimerEvent: {}
+[21.859774] (-) TimerEvent: {}
+[21.960119] (-) TimerEvent: {}
+[22.060451] (-) TimerEvent: {}
+[22.160761] (-) TimerEvent: {}
+[22.261102] (-) TimerEvent: {}
+[22.361418] (-) TimerEvent: {}
+[22.440476] (omni_wheel_drive_controller) StdoutLine: {'line': b'[ 85%] Built target omni_wheel_drive_controller\n'}
+[22.461537] (-) TimerEvent: {}
+[22.466241] (omni_wheel_drive_controller) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding CXX object CMakeFiles/test_omni_wheel_drive_controller.dir/test/test_omni_wheel_drive_controller.cpp.o\x1b[0m\n'}
+[22.561673] (-) TimerEvent: {}
+[22.661947] (-) TimerEvent: {}
+[22.762256] (-) TimerEvent: {}
+[22.862582] (-) TimerEvent: {}
+[22.962929] (-) TimerEvent: {}
+[23.063233] (-) TimerEvent: {}
+[23.163539] (-) TimerEvent: {}
+[23.263845] (-) TimerEvent: {}
+[23.364223] (-) TimerEvent: {}
+[23.464532] (-) TimerEvent: {}
+[23.564858] (-) TimerEvent: {}
+[23.665186] (-) TimerEvent: {}
+[23.765498] (-) TimerEvent: {}
+[23.865786] (-) TimerEvent: {}
+[23.966155] (-) TimerEvent: {}
+[24.066454] (-) TimerEvent: {}
+[24.166715] (-) TimerEvent: {}
+[24.267033] (-) TimerEvent: {}
+[24.367312] (-) TimerEvent: {}
+[24.467644] (-) TimerEvent: {}
+[24.567956] (-) TimerEvent: {}
+[24.668273] (-) TimerEvent: {}
+[24.768659] (-) TimerEvent: {}
+[24.868961] (-) TimerEvent: {}
+[24.969271] (-) TimerEvent: {}
+[25.069574] (-) TimerEvent: {}
+[25.169854] (-) TimerEvent: {}
+[25.270123] (-) TimerEvent: {}
+[25.370463] (-) TimerEvent: {}
+[25.470772] (-) TimerEvent: {}
+[25.571137] (-) TimerEvent: {}
+[25.671446] (-) TimerEvent: {}
+[25.771757] (-) TimerEvent: {}
+[25.872093] (-) TimerEvent: {}
+[25.972404] (-) TimerEvent: {}
+[26.072735] (-) TimerEvent: {}
+[26.173089] (-) TimerEvent: {}
+[26.273407] (-) TimerEvent: {}
+[26.373716] (-) TimerEvent: {}
+[26.474071] (-) TimerEvent: {}
+[26.574420] (-) TimerEvent: {}
+[26.674727] (-) TimerEvent: {}
+[26.775053] (-) TimerEvent: {}
+[26.875364] (-) TimerEvent: {}
+[26.975680] (-) TimerEvent: {}
+[27.075995] (-) TimerEvent: {}
+[27.176310] (-) TimerEvent: {}
+[27.276615] (-) TimerEvent: {}
+[27.376927] (-) TimerEvent: {}
+[27.477235] (-) TimerEvent: {}
+[27.577595] (-) TimerEvent: {}
+[27.677931] (-) TimerEvent: {}
+[27.778241] (-) TimerEvent: {}
+[27.878545] (-) TimerEvent: {}
+[27.978853] (-) TimerEvent: {}
+[28.079183] (-) TimerEvent: {}
+[28.179518] (-) TimerEvent: {}
+[28.213107] (omni_wheel_drive_controller) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable test_omni_wheel_drive_controller\x1b[0m\n'}
+[28.279657] (-) TimerEvent: {}
+[28.379944] (-) TimerEvent: {}
+[28.480241] (-) TimerEvent: {}
+[28.580579] (-) TimerEvent: {}
+[28.680896] (-) TimerEvent: {}
+[28.781231] (-) TimerEvent: {}
+[28.881558] (-) TimerEvent: {}
+[28.934350] (omni_wheel_drive_controller) StdoutLine: {'line': b'[100%] Built target test_omni_wheel_drive_controller\n'}
+[28.947702] (omni_wheel_drive_controller) CommandEnded: {'returncode': 0}
+[28.948404] (omni_wheel_drive_controller) JobProgress: {'identifier': 'omni_wheel_drive_controller', 'progress': 'install'}
+[28.948773] (omni_wheel_drive_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/khemin/khemin_omni/build/omni_wheel_drive_controller'], 'cwd': '/home/khemin/khemin_omni/build/omni_wheel_drive_controller', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'XDG_ACTIVATION_TOKEN': 'gnome-shell/Terminator/2969-2-khemin_TIME876895', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'khemin', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_launch_vendor/share/gz:/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/khemin/khemin_omni/install/omni_wheel_drive_controller/lib:/opt/ros/jazzy/opt/gz_launch_vendor/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/khemin', 'OLDPWD': '/home/khemin', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2587', 'SYSTEMD_EXEC_PID': '2969', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '6554', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/khemin/khemin_omni/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'khemin', 'JOURNAL_STREAM': '9:21977', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'khemin', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/khemin:@/tmp/.ICE-unix/2937,unix/khemin:/tmp/.ICE-unix/2937', 'INVOCATION_ID': 'e1aaebbd7c944396aeaf09afd4e35e1c', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/khemin/khemin_omni/install/omni_wheel_drive_controller:/home/khemin/khemin_omni/install/khemin_omni:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:8ec279b5-6e50-4ba4-9c53-46f32dafdfb6', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/opt/ros/jazzy/share', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/khemin/khemin_omni/build/omni_wheel_drive_controller', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/khemin/khemin_omni/install/omni_wheel_drive_controller:/home/khemin/khemin_omni/install/khemin_omni:/opt/ros/jazzy/opt/gz_launch_vendor:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[28.957579] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[28.957793] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/include/omni_wheel_drive_controller\n'}
+[28.957935] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/include/omni_wheel_drive_controller/omni_wheel_drive_controller_parameters.hpp\n'}
+[28.958111] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/omni_wheel_drive_plugin.xml\n'}
+[28.958240] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/include/omni_wheel_drive_controller/\n'}
+[28.958369] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/include/omni_wheel_drive_controller//omni_wheel_drive_controller\n'}
+[28.958477] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/include/omni_wheel_drive_controller//omni_wheel_drive_controller/omni_wheel_drive_controller.hpp\n'}
+[28.958608] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/include/omni_wheel_drive_controller//omni_wheel_drive_controller/odometry.hpp\n'}
+[28.958708] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/lib/libomni_wheel_drive_controller.so\n'}
+[28.972129] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/khemin/khemin_omni/install/omni_wheel_drive_controller/lib/libomni_wheel_drive_controller.so" to ""\n'}
+[28.972386] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/environment/library_path.sh\n'}
+[28.972559] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/environment/library_path.dsv\n'}
+[28.972708] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/ament_index/resource_index/package_run_dependencies/omni_wheel_drive_controller\n'}
+[28.972856] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/ament_index/resource_index/parent_prefix_path/omni_wheel_drive_controller\n'}
+[28.973051] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/environment/ament_prefix_path.sh\n'}
+[28.973151] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/environment/ament_prefix_path.dsv\n'}
+[28.973215] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/environment/path.sh\n'}
+[28.973279] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/environment/path.dsv\n'}
+[28.973344] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/local_setup.bash\n'}
+[28.973449] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/local_setup.sh\n'}
+[28.973561] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/local_setup.zsh\n'}
+[28.973676] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/local_setup.dsv\n'}
+[28.973786] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/package.dsv\n'}
+[28.973971] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/ament_index/resource_index/packages/omni_wheel_drive_controller\n'}
+[28.974099] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/omni_wheel_drive_controller\n'}
+[28.974275] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/cmake/export_omni_wheel_drive_controllerExport.cmake\n'}
+[28.974383] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/cmake/export_omni_wheel_drive_controllerExport-noconfig.cmake\n'}
+[28.974491] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[28.974607] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[28.974719] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/cmake/omni_wheel_drive_controllerConfig.cmake\n'}
+[28.974815] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/cmake/omni_wheel_drive_controllerConfig-version.cmake\n'}
+[28.974937] (omni_wheel_drive_controller) StdoutLine: {'line': b'-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/package.xml\n'}
+[28.977043] (omni_wheel_drive_controller) CommandEnded: {'returncode': 0}
+[28.981631] (-) TimerEvent: {}
+[28.987332] (omni_wheel_drive_controller) JobEnded: {'identifier': 'omni_wheel_drive_controller', 'rc': 0}
+[28.988059] (-) EventReactorShutdown: {}

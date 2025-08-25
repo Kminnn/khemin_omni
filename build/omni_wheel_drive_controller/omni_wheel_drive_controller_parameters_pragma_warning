@@ -1,0 +1,1 @@
+#pragma message("#include \"omni_wheel_drive_controller_parameters.hpp\" is deprecated. Use #include <omni_wheel_drive_controller/omni_wheel_drive_controller_parameters.hpp> instead.")

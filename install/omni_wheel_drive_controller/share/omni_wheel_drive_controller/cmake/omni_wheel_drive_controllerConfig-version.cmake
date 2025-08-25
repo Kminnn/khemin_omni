@@ -1,0 +1,1 @@
+/home/khemin/khemin_omni/build/omni_wheel_drive_controller/ament_cmake_core/omni_wheel_drive_controllerConfig-version.cmake

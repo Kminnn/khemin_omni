@@ -1,0 +1,74 @@
+[0.023s] Invoking command in '/home/khemin/khemin_omni/build/omni_wheel_drive_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/khemin/khemin_omni/omni_wheel_drive_controller -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/khemin/khemin_omni/install/omni_wheel_drive_controller
+[0.056s] -- Found ros2_control_cmake: 0.2.1 (/opt/ros/jazzy/share/ros2_control_cmake/cmake)
+[0.056s] -- Compiler warnings enabled for GNU
+[0.056s] -- Detected GCC Version: 13.3.0 (Major: 13, Minor: 3)
+[0.057s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.528s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.546s] -- Found controller_interface: 4.35.0 (/opt/ros/jazzy/share/controller_interface/cmake)
+[0.626s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.648s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.675s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.708s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.201s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[1.290s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.293s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.338s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[1.361s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[1.405s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[1.428s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[1.456s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.807s] -- Found generate_parameter_library: 0.5.0 (/opt/ros/jazzy/share/generate_parameter_library/cmake)
+[1.809s] -- Found parameter_traits: 0.5.0 (/opt/ros/jazzy/share/parameter_traits/cmake)
+[1.827s] -- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)
+[1.899s] -- Found tf2: 0.36.12 (/opt/ros/jazzy/share/tf2/cmake)
+[1.908s] -- Found tf2_msgs: 0.36.12 (/opt/ros/jazzy/share/tf2_msgs/cmake)
+[1.985s] -- Found ament_cmake_gmock: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_gmock/cmake)
+[1.986s] -- Found controller_manager: 4.35.0 (/opt/ros/jazzy/share/controller_manager/cmake)
+[2.176s] -- Found ros2_control_test_assets: 4.35.0 (/opt/ros/jazzy/share/ros2_control_test_assets/cmake)
+[2.178s] -- Found gmock sources under '/opt/ros/jazzy/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[2.182s] -- Found ament_cmake_gtest: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_gtest/cmake)
+[2.184s] -- Found gtest sources under '/opt/ros/jazzy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[2.190s] -- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.403s] -- Configuring done (2.4s)
+[2.553s] -- Generating done (0.1s)
+[2.581s] -- Build files have been written to: /home/khemin/khemin_omni/build/omni_wheel_drive_controller
+[2.607s] Invoked command in '/home/khemin/khemin_omni/build/omni_wheel_drive_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/khemin/khemin_omni/omni_wheel_drive_controller -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/khemin/khemin_omni/install/omni_wheel_drive_controller
+[2.609s] Invoking command in '/home/khemin/khemin_omni/build/omni_wheel_drive_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/khemin/khemin_omni/build/omni_wheel_drive_controller -- -j16 -l16
+[2.730s] [ 14%] Built target omni_wheel_drive_controller_parameters
+[2.740s] [ 28%] Built target gmock_main
+[2.742s] [ 50%] Built target gmock
+[2.813s] [ 71%] Built target omni_wheel_drive_controller
+[2.820s] [ 85%] Built target test_load_omni_wheel_drive_controller
+[2.899s] [100%] Built target test_omni_wheel_drive_controller
+[2.928s] Invoked command in '/home/khemin/khemin_omni/build/omni_wheel_drive_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/khemin/khemin_omni/build/omni_wheel_drive_controller -- -j16 -l16
+[2.930s] Invoking command in '/home/khemin/khemin_omni/build/omni_wheel_drive_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/khemin/khemin_omni/build/omni_wheel_drive_controller
+[2.951s] -- Install configuration: ""
+[2.953s] -- Execute custom install script
+[2.953s] -- Symlinking: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/include/omni_wheel_drive_controller/omni_wheel_drive_controller_parameters.hpp
+[2.978s] -- Symlinking: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller//omni_wheel_drive_plugin.xml
+[3.004s] -- Symlinking: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/include/omni_wheel_drive_controller//omni_wheel_drive_controller/odometry.hpp
+[3.028s] -- Symlinking: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/include/omni_wheel_drive_controller//omni_wheel_drive_controller/omni_wheel_drive_controller.hpp
+[3.053s] -- Symlinking: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/environment/library_path.sh
+[3.078s] -- Symlinking: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/environment/library_path.dsv
+[3.103s] -- Symlinking: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/ament_index/resource_index/package_run_dependencies/omni_wheel_drive_controller
+[3.129s] -- Symlinking: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/ament_index/resource_index/parent_prefix_path/omni_wheel_drive_controller
+[3.153s] -- Symlinking: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/environment/ament_prefix_path.sh
+[3.178s] -- Symlinking: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/environment/ament_prefix_path.dsv
+[3.202s] -- Symlinking: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/environment/path.sh
+[3.227s] -- Symlinking: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/environment/path.dsv
+[3.249s] -- Symlinking: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/local_setup.bash
+[3.271s] -- Symlinking: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/local_setup.sh
+[3.294s] -- Symlinking: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/local_setup.zsh
+[3.319s] -- Symlinking: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/local_setup.dsv
+[3.344s] -- Symlinking: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/package.dsv
+[3.369s] -- Symlinking: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/ament_index/resource_index/packages/omni_wheel_drive_controller
+[3.394s] -- Symlinking: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/omni_wheel_drive_controller
+[3.420s] -- Symlinking: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.445s] -- Symlinking: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/cmake/ament_cmake_export_targets-extras.cmake
+[3.470s] -- Symlinking: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/cmake/omni_wheel_drive_controllerConfig.cmake
+[3.495s] -- Symlinking: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/cmake/omni_wheel_drive_controllerConfig-version.cmake
+[3.521s] -- Symlinking: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/package.xml
+[3.545s] -- Up-to-date: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/lib/libomni_wheel_drive_controller.so
+[3.546s] -- Up-to-date: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/cmake/export_omni_wheel_drive_controllerExport.cmake
+[3.547s] -- Up-to-date: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/cmake/export_omni_wheel_drive_controllerExport-noconfig.cmake
+[3.552s] Invoked command in '/home/khemin/khemin_omni/build/omni_wheel_drive_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/khemin/khemin_omni/build/omni_wheel_drive_controller

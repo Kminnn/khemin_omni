@@ -1,0 +1,99 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ros2_control_cmake: 0.2.1 (/opt/ros/jazzy/share/ros2_control_cmake/cmake)
+-- Compiler warnings enabled for GNU
+-- Detected GCC Version: 13.3.0 (Major: 13, Minor: 3)
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found controller_interface: 4.35.0 (/opt/ros/jazzy/share/controller_interface/cmake)
+-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+-- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+-- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+-- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found generate_parameter_library: 0.5.0 (/opt/ros/jazzy/share/generate_parameter_library/cmake)
+-- Found parameter_traits: 0.5.0 (/opt/ros/jazzy/share/parameter_traits/cmake)
+-- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)
+-- Found tf2: 0.36.12 (/opt/ros/jazzy/share/tf2/cmake)
+-- Found tf2_msgs: 0.36.12 (/opt/ros/jazzy/share/tf2_msgs/cmake)
+-- Found ament_cmake_gmock: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_gmock/cmake)
+-- Found controller_manager: 4.35.0 (/opt/ros/jazzy/share/controller_manager/cmake)
+-- Found ros2_control_test_assets: 4.35.0 (/opt/ros/jazzy/share/ros2_control_test_assets/cmake)
+-- Found gmock sources under '/opt/ros/jazzy/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+-- Found ament_cmake_gtest: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_gtest/cmake)
+-- Found gtest sources under '/opt/ros/jazzy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+-- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Configuring done (4.3s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/khemin/khemin_omni/build/omni_wheel_drive_controller
+[  7%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/opt/ros/jazzy/src/gtest_vendor/src/gtest-all.cc.o[0m
+[ 14%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o[0m
+[ 21%] [32mBuilding CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o[0m
+[ 28%] [34m[1mRunning `/opt/ros/jazzy/bin/generate_parameter_library_cpp /home/khemin/khemin_omni/build/omni_wheel_drive_controller/include/omni_wheel_drive_controller/omni_wheel_drive_controller_parameters.hpp /home/khemin/khemin_omni/omni_wheel_drive_controller/src/omni_wheel_drive_controller_parameters.yaml `[0m
+[ 35%] [34m[1mCreating deprecated header file /home/khemin/khemin_omni/build/omni_wheel_drive_controller/include/omni_wheel_drive_controller_parameters.hpp[0m
+[ 35%] Built target omni_wheel_drive_controller_parameters
+[ 42%] [32mBuilding CXX object CMakeFiles/omni_wheel_drive_controller.dir/src/omni_wheel_drive_controller.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/omni_wheel_drive_controller.dir/src/odometry.cpp.o[0m
+[ 57%] [32m[1mLinking CXX static library libgmock_main.a[0m
+[ 57%] Built target gmock_main
+[ 64%] [32m[1mLinking CXX static library libgmock.a[0m
+[ 64%] Built target gmock
+[ 71%] [32mBuilding CXX object CMakeFiles/test_load_omni_wheel_drive_controller.dir/test/test_load_omni_wheel_drive_controller.cpp.o[0m
+[ 78%] [32m[1mLinking CXX executable test_load_omni_wheel_drive_controller[0m
+[ 78%] Built target test_load_omni_wheel_drive_controller
+[ 85%] [32m[1mLinking CXX shared library libomni_wheel_drive_controller.so[0m
+[ 85%] Built target omni_wheel_drive_controller
+[ 92%] [32mBuilding CXX object CMakeFiles/test_omni_wheel_drive_controller.dir/test/test_omni_wheel_drive_controller.cpp.o[0m
+[100%] [32m[1mLinking CXX executable test_omni_wheel_drive_controller[0m
+[100%] Built target test_omni_wheel_drive_controller
+-- Install configuration: ""
+-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/include/omni_wheel_drive_controller
+-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/include/omni_wheel_drive_controller/omni_wheel_drive_controller_parameters.hpp
+-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/omni_wheel_drive_plugin.xml
+-- Up-to-date: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/include/omni_wheel_drive_controller/
+-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/include/omni_wheel_drive_controller//omni_wheel_drive_controller
+-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/include/omni_wheel_drive_controller//omni_wheel_drive_controller/omni_wheel_drive_controller.hpp
+-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/include/omni_wheel_drive_controller//omni_wheel_drive_controller/odometry.hpp
+-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/lib/libomni_wheel_drive_controller.so
+-- Set non-toolchain portion of runtime path of "/home/khemin/khemin_omni/install/omni_wheel_drive_controller/lib/libomni_wheel_drive_controller.so" to ""
+-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/environment/library_path.sh
+-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/environment/library_path.dsv
+-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/ament_index/resource_index/package_run_dependencies/omni_wheel_drive_controller
+-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/ament_index/resource_index/parent_prefix_path/omni_wheel_drive_controller
+-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/environment/ament_prefix_path.sh
+-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/environment/ament_prefix_path.dsv
+-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/environment/path.sh
+-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/environment/path.dsv
+-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/local_setup.bash
+-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/local_setup.sh
+-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/local_setup.zsh
+-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/local_setup.dsv
+-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/package.dsv
+-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/ament_index/resource_index/packages/omni_wheel_drive_controller
+-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/omni_wheel_drive_controller
+-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/cmake/export_omni_wheel_drive_controllerExport.cmake
+-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/cmake/export_omni_wheel_drive_controllerExport-noconfig.cmake
+-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/cmake/omni_wheel_drive_controllerConfig.cmake
+-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/cmake/omni_wheel_drive_controllerConfig-version.cmake
+-- Installing: /home/khemin/khemin_omni/install/omni_wheel_drive_controller/share/omni_wheel_drive_controller/package.xml

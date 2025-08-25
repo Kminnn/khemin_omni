@@ -4,6 +4,8 @@
 <xacro:include filename="$(find khemin_omni)/urdf/omni.urdf.xacro"/>
 <xacro:include filename="$(find khemin_omni)/urdf/lidar.urdf.xacro"/>
 <xacro:include filename="$(find khemin_omni)/urdf/imu.urdf.xacro"/>
+<xacro:include filename="$(find khemin_omni)/urdf/imu.urdf.xacro"/>
+<xacro:include filename="$(find khemin_omni)/urdf/camera.urdf.xacro"/>
 
 
   
@@ -47,8 +49,11 @@
     <xacro:omni_wheel parent="base_link" suffix="3" xyz="0.1810 0.181 0.05" rpy="1.5708 0.0000 -0.7854"/>
     <xacro:omni_wheel parent="base_link" suffix="4" xyz="-0.1810 0.181 0.05" rpy="1.5708 0.0000 0.7854"/>
 
-    <xacro:lidar parent="base_link" suffix="1" xyz="0.0000 -0.1900 0.3150" rpy="0 0 0"/>
+    <xacro:lidar parent="base_link" suffix="1" xyz="0.0000 0.1900 0.3150" rpy="0 0 0"/>
     <xacro:imu parent="base_link" suffix="1" xyz="0 0 0.17" rpy="0 0 0"/>
+
+    <xacro:camera parent="base_link" suffix="1" xyz="0 0.22 0.2" rpy="0 0 0"/>
+
 
   
   </xacro:macro>
