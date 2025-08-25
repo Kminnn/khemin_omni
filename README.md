@@ -76,10 +76,13 @@ Open another terminal then run teleop command.
 
 <pre lang="markdown"> ros2 launch khemin_omni navigation.launch.py  </pre>
 
+The `Nav2 Goal` tool in `RViz` lets you send a navigation target to your robot. Simply click on the map for the desired position, drag the mouse to set the orientation, and the robot will begin moving to the selected goal.
+
 ![Screencast from 2025-08-23 17-17-31 (online-video-cutter com)](https://github.com/user-attachments/assets/62e4a1c7-73e2-4406-86fa-cfd546db16e1)
 
-The Nav2 Goal tool in RViz lets you send a navigation target to your robot. Simply click on the map for the desired position, drag the mouse to set the orientation, and the robot will begin moving to the selected goal.
+To view the camera stream from the robot, you can use the `rqt_image_view` tool.
 
+![Screencast from 2025-08-25 13-51-56(1) (online-video-cutter com)](https://github.com/user-attachments/assets/b30c388f-da14-4a2a-8407-ee7ee485982d)
 
 
 
