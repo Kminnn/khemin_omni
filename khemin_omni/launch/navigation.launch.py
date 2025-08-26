@@ -38,6 +38,8 @@ def generate_launch_description():
         actions=[nav2_launch]
     )
 
+    
+
     rviz_config_path = PathJoinSubstitution([
                 get_package_share_directory(PACKAGE_NAME), 'rviz', 'navigation.rviz'
             ])
@@ -49,10 +51,17 @@ def generate_launch_description():
             arguments=['-d', rviz_config_path],
             parameters=[{'use_sim_time': True}]
         )
+
+    delayed_rviz = TimerAction(
+        period=6.0,   
+        actions=[rviz2]
+    )
     
     # Create launch description and add actions
     ld = LaunchDescription(ARGUMENTS)
     ld.add_action(gazebo_sim)
     ld.add_action(delayed_nav2)
+    # ld.add_action(delayed_rviz)
+
     ld.add_action(rviz2)
     return ld

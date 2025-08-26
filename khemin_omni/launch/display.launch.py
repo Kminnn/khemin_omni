@@ -7,7 +7,7 @@ import os
 def generate_launch_description():
     pkg_share = FindPackageShare('khemin_omni').find('khemin_omni')
     xacro_file = os.path.join(pkg_share, 'urdf', 'main.urdf.xacro')
-    rviz_config_file = os.path.join(pkg_share, 'rviz', 'rviz_config.rviz')
+    rviz_config_file = os.path.join(pkg_share, 'rviz', 'display.rviz')
 
     robot_description = Command([
         PathJoinSubstitution([FindExecutable(name='xacro')]),
