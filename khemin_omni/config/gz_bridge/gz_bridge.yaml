@@ -28,11 +28,11 @@
   gz_type_name: "gz.msgs.CameraInfo"
   direction: GZ_TO_ROS
 
-- ros_topic_name: "/depth"
-  gz_topic_name: "/depth"
-  ros_type_name: "sensor_msgs/msg/Image"
-  gz_type_name: "gz.msgs.Image"
-  direction: GZ_TO_ROS
+# - ros_topic_name: "/depth"
+#   gz_topic_name: "/depth"
+#   ros_type_name: "sensor_msgs/msg/Image"
+#   gz_type_name: "gz.msgs.Image"
+#   direction: GZ_TO_ROS
 
 - ros_topic_name: "/depth/points"
   gz_topic_name: "/depth/points"

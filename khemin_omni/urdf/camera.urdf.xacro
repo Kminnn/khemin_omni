@@ -30,20 +30,20 @@
         <pose>-0.005 0 0 0 0 0</pose>
         <topic>depth</topic>
         <always_on>true</always_on>
-        <update_rate>30.0</update_rate>
+        <update_rate>20.0</update_rate>
         <visualize>true</visualize>
         <camera name="camera_${suffix}">
           <camera_info_topic>depth/camera_info</camera_info_topic>
           <pose>0 0 0 0 0 0</pose>
-          <horizontal_fov>1.5</horizontal_fov>
+          <horizontal_fov>1.0</horizontal_fov>
           <image>
-            <width>640</width>
-            <height>480</height>
+            <width>160</width>
+            <height>120</height>
             <!-- <format>R8G8B8</format> -->
           </image>
           <clip>
             <near>0.05</near>
-            <far>10.0</far>
+            <far>8.0</far>
           </clip>
           <noise>
             <type>gaussian</type>
@@ -56,19 +56,19 @@
         <gz_frame_id>camera_link_${suffix}</gz_frame_id>
         <pose>-0.005 0 0 0 0 0</pose>
         <always_on>1</always_on>
-        <update_rate>30</update_rate>
+        <update_rate>5</update_rate>
         <visualize>true</visualize>
         <topic>camera</topic>
         <camera>
           <camera_info_topic>/camera_info</camera_info_topic>
-          <horizontal_fov>1.5</horizontal_fov>
+          <horizontal_fov>1.0</horizontal_fov>
           <image>
-            <width>640</width>
-            <height>480</height>
+            <width>160</width>
+            <height>120</height>
           </image>
           <clip>
             <near>0.01</near>
-            <far>300</far>
+            <far>20</far>
           </clip>
         </camera>
         <!-- <depth_camera>

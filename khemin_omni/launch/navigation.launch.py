@@ -56,7 +56,7 @@ def generate_launch_description():
         period=6.0,   
         actions=[rviz2]
     )
-    
+
     # Create launch description and add actions
     ld = LaunchDescription(ARGUMENTS)
     ld.add_action(gazebo_sim)
