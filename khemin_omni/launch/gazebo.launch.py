@@ -1,7 +1,7 @@
 import os
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription, SetEnvironmentVariable, EmitEvent
+from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription, SetEnvironmentVariable, EmitEvent, TimerAction
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration, PathJoinSubstitution, Command
 from launch_ros.substitutions import FindPackageShare
@@ -81,7 +81,8 @@ def generate_launch_description():
     ros_gz_bridge = Node(
         package="ros_gz_bridge",
         executable="parameter_bridge",
-        parameters=[{'config_file': bridge_params}],
+        parameters=[{'config_file': bridge_params},
+                {'use_sim_time': use_sim_time}]
         # arguments=[
         #     '--ros-args',
         #     '-p',
@@ -112,17 +113,6 @@ def generate_launch_description():
             ]
         )
 
-
-
-    # spawn controller     
-    # N = int(4)
-    # arg = ['joint_state_broadcaster']
-    # for i in range(N):
-    #     arg.append(f"wheel{i+1}_controller")
-    # spawn_wheel_controller = Node(package='controller_manager', executable='spawner',
-    #                     arguments=arg,
-    #                     output='screen')
-
     spawn_controller = Node(
         package='controller_manager',
         executable='spawner',
@@ -136,11 +126,6 @@ def generate_launch_description():
         arguments=['joint_broad'],
         )
 
-    # kinematics = Node(
-    #     package=PACKAGE_NAME,
-    #     executable="kinematics",
-    #     parameters=[{"use_sim_time": use_sim_time}]
-    # )
 
     rviz_node = Node(
         package='rviz2',
@@ -148,6 +133,15 @@ def generate_launch_description():
         name='rviz2',
         output='screen',
         arguments=['-d', rviz_config_file],
+    )
+
+
+    foxglove = Node(
+        package='foxglove_bridge',
+        executable='foxglove_bridge',
+        name='foxglove_bridge',
+        output='screen',
+        parameters=[{'use_sim_time': True}]
     )
 
     
@@ -161,28 +155,29 @@ def generate_launch_description():
         output='screen'
     )
 
-    ekf_node = Node(
-        package='robot_localization',
-        executable='ekf_node',
-        name='ekf_filter_node',
-        output='screen',
-        parameters=[ekf_config_path]
+
+    
+    delayed_robot_state_publisher = TimerAction(
+        period=3.0,  
+        actions=[
+            node_robot_state_publisher
+        ]
     )
+    
 
     # Create launch description and add actions
     ld = LaunchDescription(ARGUMENTS)
     ld.add_action(ign_resource_path)
     ld.add_action(node_robot_state_publisher)
+    # ld.add_action(delayed_robot_state_publisher)
     ld.add_action(gazebo)
     ld.add_action(spawn_robot)
     ld.add_action(ros_gz_bridge)
-    # ld.add_action(spawn_wheel_controller)
     ld.add_action(spawn_controller)
     ld.add_action(twist_mux)
     ld.add_action(twist_stamper_node)
     ld.add_action(relay_odom)
-
-    # ld.add_action(kinematics)
-    # ld.add_action(rviz_node)
     ld.add_action(joint_state_broadcaster)
+    ld.add_action(foxglove)
+
     return ld

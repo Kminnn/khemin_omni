@@ -34,7 +34,7 @@ def generate_launch_description():
     )
 
     delayed_nav2 = TimerAction(
-        period=5.0,
+        period=10.0,
         actions=[nav2_launch]
     )
 

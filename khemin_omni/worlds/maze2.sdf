@@ -629,7 +629,7 @@
       <static>1</static>
     </model>
 
-    <!-- <model name="obstacle_1">
+    <model name="obstacle_1">
       <pose>3 3 0 0 0 0</pose> 
       <static>true</static>
       <link name="link">
@@ -676,7 +676,7 @@
           <material><diffuse>0 1 0 1</diffuse></material>
         </visual>
       </link>
-    </model> -->
+    </model> 
     
 
 
