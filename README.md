@@ -42,6 +42,7 @@ sudo apt install -y ros-jazzy-ros-gz \
   ros-jazzy-robot-localization \
   ros-jazzy-spatio-temporal-voxel-layer \
   ros-jazzy-topic-tools \
+  ros-jazzy-twist-stamper \
   ros-jazzy-slam-toolbox </pre>
 
 Don't forget to build and source the package. 
