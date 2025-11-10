@@ -30,7 +30,7 @@ def generate_launch_description():
 
     nav2_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([nav2_launch_path]),
-        launch_arguments={'world': LaunchConfiguration('world')}.items()
+        launch_arguments={'world': LaunchConfiguration('world'),'switch-timeout': '30.0'}.items()
     )
 
     delayed_nav2 = TimerAction(
@@ -60,7 +60,8 @@ def generate_launch_description():
     # Create launch description and add actions
     ld = LaunchDescription(ARGUMENTS)
     ld.add_action(gazebo_sim)
-    ld.add_action(delayed_nav2)
+    ld.add_action(nav2_launch)
+    # ld.add_action(delayed_nav2)
     # ld.add_action(delayed_rviz)
 
     ld.add_action(rviz2)

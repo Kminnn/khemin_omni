@@ -15,6 +15,8 @@ find_package(sensor_msgs REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
+find_package(rclpy REQUIRED) 
+# find_package(nav2_simple_commander REQUIRED) 
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
@@ -32,8 +34,14 @@ if(BUILD_TESTING)
 endif()
 
 
-install(DIRECTORY urdf mesh launch rviz config map worlds
+install(DIRECTORY urdf mesh launch rviz config map worlds 
   DESTINATION share/${PROJECT_NAME}
+)
+
+install(
+  PROGRAMS
+    nodes/terminal_control_node.py
+  DESTINATION lib/${PROJECT_NAME}
 )
 
 ament_package()

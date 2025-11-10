@@ -116,7 +116,7 @@ def generate_launch_description():
     spawn_controller = Node(
         package='controller_manager',
         executable='spawner',
-        arguments=['omni_wheel_drive_controller'],
+        arguments=['omni_wheel_drive_controller', "--switch-timeout", "30.0"]
         # remappings=[('/omni_wheel_drive_controller/odom', '/odom')],
         )
 
