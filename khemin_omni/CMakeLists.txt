@@ -44,4 +44,10 @@ install(
   DESTINATION lib/${PROJECT_NAME}
 )
 
+install(
+  PROGRAMS
+    nodes/waypoint_follow_node.py
+  DESTINATION lib/${PROJECT_NAME}
+)
+
 ament_package()

@@ -21,6 +21,8 @@ class Nav2ActionClient(Node):
 
         self.goal_handle = None
 
+        self.stop_thread = False
+
         # Start user input thread
         self.input_thread = threading.Thread(target=self.get_user_input)
         self.input_thread.daemon = True
@@ -110,6 +112,25 @@ class Nav2ActionClient(Node):
         self.get_logger().info(f'Resuming navigation from waypoint index {self.current_waypoint}')
         self.send_goal()
 
+    def shutdown(self):
+        # 1. Set the flag to signal the input thread to stop its loop
+        self.stop_thread = True
+        
+        # 2. Interrupt the input stream if possible (not trivial with sys.stdin.readline)
+        #    For simplicity and robustness, we rely on the user typing 'exit' or 
+        #    the main ROS shutdown to handle the rest.
+        
+        # 3. Wait for the input thread to finish gracefully
+        if self.input_thread.is_alive():
+            self.get_logger().info('Waiting for input thread to join...')
+            # You might need to add a small sleep or a try/except around join 
+            # if the readline call is blocking indefinitely, but for most 
+            # terminal setups, this should work when rclpy.shutdown() is called 
+            # due to how Python handles terminal I/O during exit.
+            self.input_thread.join(timeout=1.0) 
+            if self.input_thread.is_alive():
+                self.get_logger().warn('Input thread did not join gracefully. It may hang until input is received.')
+
     def get_user_input(self):
         self.get_logger().info(
             '\n--- TERMINAL CONTROL READY ---\n'
@@ -118,13 +139,17 @@ class Nav2ActionClient(Node):
             'Type "exit" or "quit" to close the node.\n'
             '--------------------------------\n'
         )
-        while rclpy.ok():
+        while rclpy.ok() and not self.stop_thread:
             try:
                 user_input = sys.stdin.readline().strip().lower()
                 if user_input == 'stop':
                     self.cancel_navigation()
                 elif user_input == 'go':
                     self.resume_navigation()
+                elif user_input in ('exit', 'quit'):
+                    # Call rclpy.shutdown() to signal the main thread to exit
+                    rclpy.shutdown() 
+                    break # Exit the input thread loop
             except Exception as e:
                 self.get_logger().error(f'Error reading input: {e}')
                 break
