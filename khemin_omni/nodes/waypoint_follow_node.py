@@ -29,27 +29,38 @@ class WaypointCommander(Node):
     # ------------------ WAYPOINT DEFINITIONS -------------------------
     def get_waypoints(self):
         wp = []
-
+        
         w1 = PoseStamped()
         w1.header.frame_id = 'map'
-        w1.pose.position.x = 0.158
-        w1.pose.position.y = 7.303
-        w1.pose.orientation.w = 0.7359
+        w1.pose.position.x = 6.4158408
+        w1.pose.position.y = 12.5043312
+        w1.pose.orientation.z = 0.9897345
+        w1.pose.orientation.w = 0.1429178
         wp.append(w1)
 
         w2 = PoseStamped()
         w2.header.frame_id = 'map'
-        w2.pose.position.x = 4.948
-        w2.pose.position.y = 7.303
-        w2.pose.orientation.w = -0.7198
+        w2.pose.position.x = 6.4455070
+        w2.pose.position.y = 11.6966477
+        w2.pose.orientation.z = -0.7738097
+        w2.pose.orientation.w = 0.6334180
         wp.append(w2)
 
         w3 = PoseStamped()
         w3.header.frame_id = 'map'
-        w3.pose.position.x = 2.855
-        w3.pose.position.y = 3.314
-        w3.pose.orientation.w = -0.9986
+        w3.pose.position.x = 4.9656986
+        w3.pose.position.y = 6.7620813
+        w3.pose.orientation.z= 0.9998369
+        w3.pose.orientation.w = 0.0180557
         wp.append(w3)
+
+        w4 = PoseStamped()
+        w4.header.frame_id = 'map'
+        w4.pose.position.x = 5.8246207
+        w4.pose.position.y = 12.7131858
+        w4.pose.orientation.z= 0.9927630
+        w4.pose.orientation.w = 0.1200899
+        wp.append(w4)
 
         return wp
 
