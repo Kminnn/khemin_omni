@@ -178,6 +178,6 @@ def generate_launch_description():
     ld.add_action(twist_stamper_node)
     ld.add_action(relay_odom)
     ld.add_action(joint_state_broadcaster)
-    ld.add_action(foxglove)
+    #ld.add_action(foxglove)
 
     return ld
